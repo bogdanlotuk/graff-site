@@ -1,0 +1,27 @@
+.about {
+    &__inner {
+        margin: 0 auto;
+        max-width: 1024px;
+        display: flex;
+        flex-direction: column;
+        gap: 75px;
+        padding: 46px 5px 72px 66px;
+    }
+    &__item-link {
+        display: flex;
+        gap: 26px;
+    }
+    &__description {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    &__title {
+        font-size: 27px;
+        color: $grey-title;
+    }
+    &__text {
+        margin-bottom: 0;
+        color: $grey-text;
+    }
+}

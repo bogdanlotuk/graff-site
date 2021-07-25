@@ -1,0 +1,93 @@
+.header {
+    color: $white;
+    &__top {
+        position: fixed;
+        margin: 0 auto;
+        width: 100%;
+        height: 90px;
+        top: 0;
+        left: 0;
+        background: $white-transparent;
+        z-index: 10;
+    }
+    &__top-inner {
+        margin: 0 auto;
+        max-width: 1024px;
+        height: 100%;
+        padding: 0 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;        
+    }
+    &__logo {
+        margin-left: -3px;
+    }
+    &__navigation {
+        margin-left: auto;
+        margin-top: 8px;
+    }
+    &__login {
+        background: $pink;
+        border: none;
+        font-family: 'Segoe';
+        font-size: 17px;
+        text-transform: capitalize;
+        color: $white;
+        border-radius: 3px;
+        padding: 1px 14px 1px 33px;
+        margin: 9px 5px 0 42px;
+        position: relative;
+    }
+    &__login::before {
+        position: absolute;
+        content: "";
+        width: 13px;
+        height: 14px;
+        left: 13px;
+        top: 50%;
+        transform: translateY(-50%);
+        background: center / cover no-repeat url(../img/login.svg);
+    }
+    &__login:hover {
+        transition: all 0.5s ease-out;
+        background: $pink-active;
+    }
+    &__center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__center-inner {
+        padding: 399px 0 80px 0;
+        background: center / cover no-repeat url('../img/img_1.jpg');
+    }
+    &__center-title {
+        text-align: center;
+        font-family: 'Alter';
+        font-size: 68px;
+        text-transform: uppercase;
+        margin-bottom: 0;
+        line-height: 110%;
+    }
+    &__center-text {
+        text-align: center;
+        font-size: 25px;
+        margin: 0;
+        color: $white-transparent;
+    }
+}
+.menu-list {
+    display: flex;
+    gap: 35px;
+    &__item-link {
+        font-family: 'Segoe';
+        font-size: 17px;
+        text-transform: capitalize;
+        color: $grey;
+    }
+    &__item-link:hover {
+        color: $black;
+        display: relative;
+        border-bottom: 2px solid $black;
+    }
+}
